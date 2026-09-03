@@ -18,14 +18,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fichier CSS séparé -->
-    <link rel="stylesheet" href="style.css" />   
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
-    <a 
-      href="#main-content" 
+  <body
+    class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between"
+  >
+    <a
+      href="#main-content"
       class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
     >
       Aller au contenu principal
     </a>
-  </body>>
+
+    <!-- En-tête / Navigation -->
+    <header class="header">
+      <div class="header__container">
+        <a
+          href="index.html"
+          class="header__brand"
+          aria-label="FacturaApp - Accueil"
+        >
+          FacturaApp
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="navigation__list">
+            <li>
+              <a href="info.html" class="navigation__link">À propos de nous</a>
+            </li>
+            <li>
+              <a href="contact.html" class="navigation__link">Nous contacter</a>
+            </li>
+            <li>
+              <a
+                href="connexion.html"
+                class="navigation__link navigation__link--button"
+                >Connexion</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
