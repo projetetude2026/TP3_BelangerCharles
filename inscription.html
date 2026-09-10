@@ -105,20 +105,114 @@
   </section>
 
   <!-- SECTION 2 : Formulaire d'inscription -->
-  <section aria-labelledby="form-heading" class="grid grid-cols-12">
-    <div class="col-span-12 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
+<section aria-labelledby="form-heading" class="grid grid-cols-12">
+  <div class="col-span-12 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
 
-      <div class="text-center mb-8">
-        <h1 id="form-heading" class="text-2xl font-bold text-slate-900">Créer un compte</h1>
-        <p class="text-sm text-slate-500 mt-2">
-          Rejoignez-nous et commencez à gérer vos factures facilement.
-        </p>
+    <div class="text-center mb-8">
+      <h1 id="form-heading" class="text-2xl font-bold text-slate-900">Créer un compte</h1>
+      <p class="text-sm text-slate-500 mt-2">
+        Rejoignez-nous et commencez à gérer vos factures facilement.
+      </p>
+    </div>
+
+    <!-- Formulaire interne structuré en grille responsive -->
+    <form action="dashboard.html" method="POST" class="grid grid-cols-12 gap-4">
+
+      <!-- Nom complet -->
+      <div class="col-span-12">
+        <label for="name" class="block text-sm font-medium text-slate-700 mb-1">
+          Nom complet
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Jean Dupont"
+          class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+        />
       </div>
 
-      <!-- Ton formulaire actuel reste ici, on l'étendra à l'étape 3 -->
+      <!-- Adresse E-mail -->
+      <div class="col-span-12">
+        <label for="email" class="block text-sm font-medium text-slate-700 mb-1">
+          Adresse e-mail
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="nom@exemple.com"
+          class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+        />
+      </div>
 
+      <!-- Mot de passe -->
+      <div class="col-span-12 sm:col-span-6">
+        <label for="password" class="block text-sm font-medium text-slate-700 mb-1">
+          Mot de passe
+        </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="••••••••"
+          class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+        />
+      </div>
+
+      <!-- Confirmation du mot de passe -->
+      <div class="col-span-12 sm:col-span-6">
+        <label for="confirm-password" class="block text-sm font-medium text-slate-700 mb-1">
+          Confirmation
+        </label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+          placeholder="••••••••"
+          class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+        />
+      </div>
+
+      <!-- Conditions d'utilisation -->
+      <div class="col-span-12 flex items-start gap-2 pt-2">
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          required
+          class="mt-1 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+        />
+        <label for="terms" class="text-xs text-slate-600">
+          J'accepte les
+          <a href="#" class="text-blue-600 hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded">conditions d'utilisation</a>
+          et la
+          <a href="#" class="text-blue-600 hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded">politique de confidentialité</a>.
+        </label>
+      </div>
+
+      <!-- Bouton de soumission -->
+      <div class="col-span-12 pt-2">
+        <button
+          type="submit"
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg shadow-md transition duration-200 focus:outline-none focus:ring-4 focus:ring-blue-200"
+        >
+          S'inscrire
+        </button>
+      </div>
+    </form>
+
+    <!-- Lien vers la connexion -->
+    <div class="mt-6 text-center text-sm text-slate-600">
+      Vous avez déjà un compte ?
+      <a href="connexion.html" class="text-blue-600 font-semibold hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded">Se connecter</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- SECTION 3 : Réassurance / sécurité -->
   <section aria-labelledby="security-heading" class="grid grid-cols-12 mt-10 sm:mt-14">
