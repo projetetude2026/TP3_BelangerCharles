@@ -322,32 +322,34 @@
             </div>
 
             <!-- 8. Conditions d'utilisation (checkbox) -->
-            <div class="col-span-12 flex items-start gap-2 pt-2">
-              <input
-                type="checkbox"
-                id="terms"
-                name="terms"
-                required
-                class="signup-form__input mt-1 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
-                aria-describedby="terms-error"
-              />
-              <label
-                for="terms"
-                class="signup-form__label text-xs text-slate-600"
-              >
-                J'accepte les
-                <a
-                  href="#"
-                  class="text-blue-600 hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
-                  >conditions d'utilisation</a
+            <div class="col-span-12 pt-2">
+              <div class="flex items-start gap-2">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  required
+                  class="signup-form__input mt-1 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                  aria-describedby="terms-error"
+                />
+                <label
+                  for="terms"
+                  class="signup-form__label text-xs text-slate-600"
                 >
-                et la
-                <a
-                  href="#"
-                  class="text-blue-600 hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
-                  >politique de confidentialité</a
-                >.
-              </label>
+                  J'accepte les
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
+                    >conditions d'utilisation</a
+                  >
+                  et la
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:underline focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
+                    >politique de confidentialité</a
+                  >.
+                </label>
+              </div>
               <p
                 id="terms-error"
                 class="signup-form__error text-red-600 text-xs mt-1 hidden"
@@ -398,4 +400,5 @@
       </section>
     </main>
   </body>
+  <script src="script.js" defer></script>
 </html>
