@@ -14,7 +14,7 @@ if ("serviceWorker" in navigator) {
       });
   });
 }
-
+// VALIDATION DU FORMULAIRE D'INSCRIPTION
 const form = document.getElementById('signup-form');
 
 const errorMessages = {
